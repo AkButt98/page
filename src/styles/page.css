@@ -1,0 +1,200 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+  }
+  .logo{
+    margin-bottom: 9px;
+  }
+  .heading-1{
+    text-align: center; 
+    color: rgb(45, 45, 45);
+    font-size: 36px;
+    font-weight: lighter;
+    font-family: Roboto, Helvetica, sans-serif ;
+    box-sizing: border-box;
+    line-height: normal;
+    padding: 0px 20px;
+  
+  }
+  .heading-2{
+    margin-top: 0px;
+    font-weight: 400;
+    padding: 0px 20px;
+    text-align: center;
+    color: inherit;
+  
+  }
+  
+  
+  
+  
+  
+  .form{
+    padding-top: 70px;
+    padding-bottom: 40px;
+    outline: none;
+    border-color: rgba(63, 63, 63, 0.33);
+    background-color: rgb(255, 255, 255);
+    margin: 25px auto 80px auto;
+    border-width: 2px;
+    border-style: solid;    
+    background-position-y: -2px;
+    border-radius: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 720px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .form-inner{
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    
+  }
+  
+  .form-p-1{
+    font-family: Roboto, Helvetica, sans-serif !important;
+    margin-top: 10px;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    
+  }
+  .form-p-1-inner{
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: rgba(0,0,0,0.1);
+    min-height: 1px;
+  }
+  .menu-title{
+    border-bottom: 1px solid #DDD;
+    margin-bottom: 7px;
+    padding: 20px 5px 5px 5px;
+    display: flex;
+    font-weight: bold;
+    justify-content: space-between;
+    color: #333;
+  }
+  .radio-selector{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+   
+  }
+  .radio-text{
+    text-align: end;
+  }
+  
+  
+  
+  #input-1{
+    border: 1px solid rgba(0,0,0,0.2);
+    width: 100%;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 12px 18px;
+    background-color: #fff;
+    margin-top: 22px;
+    box-sizing: border-box;
+  
+  }
+  #EmailInp{
+    margin-top: 11px;
+  }
+  
+  
+  #input-2{
+    
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    padding: 14px 18px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px; 
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 1.42857143;
+  }
+  #CardInp{
+    margin-top: 9px;
+  }
+  
+  
+  .bottom-inputs{
+    display: flex;
+    justify-content: space-between;
+  }
+  #bottom-input-1{
+    float: left;
+      width: 50%;
+      padding-right: 20px;
+  }
+  #bottom-input-2{
+    float: left;
+    width: 50%;
+  }
+  
+  #input-3,#input-4{
+    margin-top: 12px;
+    border: 1px solid rgba(0,0,0,0.2);
+    width: -webkit-fill-available;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 12px 18px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+    border-radius: 5px;
+    background-color: #fff;
+  
+  }
+  
+  
+  #btnDiv{
+    margin-top: 40px; 
+    display: block;    text-align: center; 
+    position: relative;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    box-sizing: border-box;
+  }
+  #btn{
+    background-color: rgb(14, 141, 199);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(0,0,0,0.1);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%);
+    border-radius: 4px;       
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 13px 35px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #FFF;
+    text-decoration: none;
+  }
+  #s1{
+    font-weight: bold;
+    font-size: 18px;  
+    box-sizing: border-box;
+  }
+  #s2{
+    font-size: 14px;
+    line-height: 1.42857143;
+    font-weight: normal; 
+    opacity: 0.7; 
+  }
+  
+  .payout-div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
