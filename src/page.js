@@ -2,10 +2,27 @@ import React from 'react';
 import Inputer from './components/input';
 import Button from './components/button';
 import './page.css'
-function radioHandler(e) {
-    console.log(e.target.value);
-}
+import { useState } from 'react';
+
 function Page() {
+  
+  const [radio1, setradio1] = useState('radio-selector');
+  const [radio2, setradio2] = useState('radio-selector');
+  function radioHandler(e) {
+    switch (e.target.value) {
+      case '1':
+          setradio2('radio-selector');
+          setradio1('radio-selector active-radio');
+        break;
+      case '2':
+          setradio1('radio-selector');
+          setradio2('radio-selector active-radio');
+      
+        break;
+      default:
+        break;
+    }
+}
   return <div>
        <div className='container'>
         <div className='logo'>
@@ -36,17 +53,17 @@ function Page() {
               <div >Price</div>
             </div>
         <div onChange={radioHandler}>
-            <div className='radio-selector'>
-              <div>
-              <input type="radio" id="radio-1" value={1} /> 
+            <div className= {radio1}>
+              <div  >
+              <input type="radio" id="radio-1" name="radios" value='1' /> 
               <label for="radio-1">Blockchain Mastery University - Monthly Membership</label>
               
               </div>
               <div className='radio-text'>Only $49/mo</div>
             </div>
-            <div className='radio-selector'>
+            <div className= {radio2}>
                 <div>
-                <input type="radio" id="radio-2" value={2} />
+                <input type="radio" id="radio-2" name="radios" value='2' />
                 <label for="radio-2" >Masterclass Admission</label>
                 </div>
                 <div className='radio-text'>$99</div>
