@@ -56,7 +56,7 @@ function Page() {
             <div className= {radio1}>
               <div  >
               <input type="radio" id="radio-1" name="radios" value='1' /> 
-              <label for="radio-1">Blockchain Mastery University - Monthly Membership</label>
+              <label htmlFor="radio-1">Blockchain Mastery University - Monthly Membership</label>
               
               </div>
               <div className='radio-text'>Only $49/mo</div>
@@ -64,7 +64,7 @@ function Page() {
             <div className= {radio2}>
                 <div>
                 <input type="radio" id="radio-2" name="radios" value='2' />
-                <label for="radio-2" >Masterclass Admission</label>
+                <label htmlFor="radio-2" >Masterclass Admission</label>
                 </div>
                 <div className='radio-text'>$99</div>
             </div> 
@@ -95,7 +95,12 @@ function Page() {
               </div>   
             </form>
           </div>
-          <Button divId="btnDiv" btnId="btn" span1="s1" span2="s2"/>
+          <Button divId="btnDiv" btnId="btn" loading={false}>
+          
+            <span id="s1">Complete Order</span>
+            <span id="s2">Get Instant Access</span>
+           
+          </Button>
           <div className='payout-div'>
             <img src="https://www.clickfunnels.com/images/credit-only.png"  width="200" alt='online-payout'/>
           </div>

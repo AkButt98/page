@@ -1,13 +1,19 @@
-import React from 'react';
-
+import React, { useState } from 'react';
+import '../styles/button.css'
 function Button(props) {
-    
-  return <div id={props.divId} aria-disabled="false">
-        <a href="#submit-form" id={props.btnId} >
-            <span id={ props.span1}>Complete Order</span>
-            <span id={ props.span2}>Get Instant Access</span>
-        </a>
-  </div> ;
+  const [loading, setloading] = useState(props.loading);
+
+  function loader() {
+    return <div className='lds-dual-ring'/>
+  }
+  function clickHandler() {
+   setloading(true)
+  }
+  return <div id={props.divId} aria-disabled="false" onClick={clickHandler}>
+         <button type="submit" id={props.btnId} >
+            {loading ? loader() : props.children  }
+          </button>     
+          </div> ;
 }
 
 export default Button;

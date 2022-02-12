@@ -4,7 +4,7 @@ import '../styles/input.css'
 function Inputer(props) {
     const [value, setVlaue] = useState(props.value);
   return <div id={ props.divId}>
-            <label className='label' for={props.label}>{props.label}</label><br></br>
+            <label className='label' htmlFor={props.label}>{props.label}</label><br></br>
             <input id={props.inpId} type={props.type}
             placeholder={props.placeholder} 
             value={value}
